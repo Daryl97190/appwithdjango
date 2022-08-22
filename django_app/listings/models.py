@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Band(models.Model):
+    
+    # Champ qui stocke les données de type chaine/caractère/texte dans une base de données
+    name = models.fields.CharField(max_length=100) 
